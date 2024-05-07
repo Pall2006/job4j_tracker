@@ -6,14 +6,14 @@ public class Item {
     private int id;
     private String name;
 
-    private LocalDateTime create = LocalDateTime.now();
+    private LocalDateTime created = LocalDateTime.now();
 
-    public LocalDateTime getCreate() {
-        return create;
+    public LocalDateTime getCreated() {
+        return created;
     }
 
-    public void setCreate(LocalDateTime create) {
-        this.create = create;
+    public void setCreated(LocalDateTime created) {
+        this.created = created;
     }
 
     public Item() {
