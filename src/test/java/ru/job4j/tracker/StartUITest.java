@@ -12,7 +12,7 @@ class StartUITest {
                 new String[] {"0", "Item name", "1"}
         );
         Tracker tracker = new Tracker();
-        Output output = new ConsoleOutput();
+        Output output = new StubOutput();
         UserAction[] actions = {
                 new CreateAction(output),
                 new ExitAction(output)
@@ -24,7 +24,7 @@ class StartUITest {
     @Test
     void whenReplaceItem() {
         Tracker tracker = new Tracker();
-        Output output = new ConsoleOutput();
+        Output output = new StubOutput();
         Item item = tracker.add(new Item("Replaced item"));
         String replacedName = "New item name";
         Input input = new MockInput(
@@ -41,7 +41,7 @@ class StartUITest {
     @Test
     void whenDeleteItem() {
         Tracker tracker = new Tracker();
-        Output output = new ConsoleOutput();
+        Output output = new StubOutput();
         Item item = tracker.add(new Item("Deleted item")); /* Добавляется в tracker новая заявка */
         Input input = new MockInput(
                 new String[] {"0", String.valueOf(item.getId()), "1"}
