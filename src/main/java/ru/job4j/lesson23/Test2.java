@@ -16,7 +16,7 @@ public class Test2 {
 
 class Employee {
 
-    double salary = 100;
+    double salary = 1000;
     String name = "Kolya";
     int age;
     int experience;
