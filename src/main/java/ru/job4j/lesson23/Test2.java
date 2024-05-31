@@ -11,8 +11,6 @@ public class Test2 {
         xr.eat();
         xirurg2.sleep();
         System.out.println(xr.name);
-
-//        d.eat();
     }
 }
 
