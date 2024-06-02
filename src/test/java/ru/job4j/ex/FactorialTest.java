@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FactorialTest {
 
-     @Test
+    @Test
     public void whenException() {
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
@@ -20,10 +20,10 @@ class FactorialTest {
 
     @Test
     public void whenFactorialEquals72() {
-    int number = 4;
-    int expected = 24;
-    Factorial factorial = new Factorial();
-    int result = factorial.calc(number);
-    assertThat(result).isEqualTo(expected);
+        int number = 4;
+        int expected = 24;
+        Factorial factorial = new Factorial();
+        int result = factorial.calc(number);
+        assertThat(result).isEqualTo(expected);
     }
 }
