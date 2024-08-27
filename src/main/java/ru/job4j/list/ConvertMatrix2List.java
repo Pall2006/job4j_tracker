@@ -11,7 +11,6 @@ public class ConvertMatrix2List {
                 list.add(cell);
             }
         }
-
         return list;
     }
 }
